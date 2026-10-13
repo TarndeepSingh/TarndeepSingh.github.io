@@ -234,10 +234,10 @@ footer .wrap{border-top:1px solid rgba(255,255,255,.2);padding-top:22px;display:
 .tab{font-family:var(--display);font-weight:700;font-size:.95rem;padding:9px 18px;border-radius:99px;border:2px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .15s}
 .tab:hover{transform:translateY(-2px)}
 .tab[aria-pressed="true"]{background:var(--ink);color:#fff}
-.events{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;align-items:start}
-.ev{padding:28px;border:2px solid var(--ink);border-radius:26px;background:var(--mist);box-shadow:6px 6px 0 var(--ink)}
+.events{column-count:2;column-gap:26px}
+.ev{display:block;break-inside:avoid;-webkit-column-break-inside:avoid;margin:0 0 26px;padding:28px;border:2px solid var(--ink);border-radius:26px;background:var(--mist);box-shadow:6px 6px 0 var(--ink)}
 .ev[hidden]{display:none}
-.ev.big{grid-column:span 2}
+.ev.big{column-span:all}
 .ev[data-group="leadership"]{background:var(--sunl)}
 .ev[data-group="volunteering"]{background:var(--mintl)}
 .ev[data-group="participation"]{background:var(--lavl)}
@@ -301,8 +301,8 @@ body.is-owner .toast{bottom:110px}
   .bx-lang,.bx-tools,.bx-cs{grid-column:span 3}
   .bx-cs{grid-column:span 6}
   .win:nth-child(n){grid-column:span 6}
-  .events{grid-template-columns:1fr}
-  .ev.big{grid-column:auto}
+  .events{column-count:1}
+  .ev.big{column-span:none}
 }
 @media (max-width:700px){
   section{padding:80px 5vw}
@@ -875,14 +875,14 @@ body.is-owner .toast{bottom:110px}
       facts: ["99 participants", "33 teams", "About 2 weeks of planning"],
       body: "I wanted participants to think, move, decode and collaborate, not just follow clues to a box.",
       points: ["Designed and planned the rounds, clues, riddles, cipher-based challenges, locations and event flow.", "Supervised the execution with a team, hosting 33 teams and 99 participants through multiple stages of problem-solving, decoding, logical reasoning and teamwork.", "Riddles, location clues, hidden slips and sequencing turned the campus into the game board, with classrooms as checkpoints.", "It was my third treasure hunt."] },
-    { key: 'engday25', group: 'leadership', title: 'Engineers’ Day 2025 treasure hunt', when: '2025', role: 'Organiser',
-      facts: ['100+ participants', '30+ teams', '10+ volunteers', 'Students from all departments'],
-      body: 'A treasure hunt across the whole campus that I organised, open to students from every department.',
-      points: [] },
     { key: "ci2a", group: "volunteering", title: "CI2A 2026 conference", when: "3 to 5 April 2026", role: "Volunteer",
       facts: ["3-day international conference"],
       body: "The International Conference on Connected Intelligence for Industrial Applications, held at Akal University, Talwandi Sabo.",
       points: ["Supported backend coordination and management of technical conference sessions, including working closely with a faculty member to run his research sessions.", "Assisted with session management, documentation and coordination during the conference.", "Worked with faculty members, researchers and the organizing team to support smooth execution.", "Gained exposure to discussions around connected intelligence and its industrial applications, with speakers from India, the USA, the UK, Australia, Germany, Oman and Malta."] },
+    { key: 'engday25', group: 'leadership', title: 'Engineers’ Day 2025 treasure hunt', when: '2025', role: 'Organiser',
+      facts: ['100+ participants', '30+ teams', '10+ volunteers', 'Students from all departments'],
+      body: 'A treasure hunt across the whole campus that I organised, open to students from every department.',
+      points: [] },
     { key: "dataninjas", group: "leadership", title: "DataNinjas club events", when: "Nov 2024 to Dec 2025", role: "Founding President",
       facts: ["75 members", "Quiz: 48", "Debate: 25", "Treasure hunt: 90 in 30 teams"],
       body: "Founding President of DataNinjas, a technical club at Akal University focused on Data Science, technology, problem-solving and collaborative learning, under Turing Truncheons, Akal Tech Society.",
