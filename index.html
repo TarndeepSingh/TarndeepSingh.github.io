@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tarndeep Singh | Data Science Student</title>
-<meta name="description" content="Tarndeep Singh is a final-year B.Tech Data Science student at Akal University building an Indian Sign Language recognition system with MediaPipe and TensorFlow. Open to software, data science and machine learning roles for 2027.">
+<title>Tarndeep Singh | AI, Machine Learning and Data Science</title>
+<meta name="description" content="Tarndeep Singh is a B.Tech Computer Science and Engineering student specialising in Data Science at Akal University, graduating in 2027. Explore projects in machine learning, computer vision, and software development.">
 <meta name="theme-color" content="#f5f1ff">
-<meta property="og:title" content="Tarndeep Singh | Data Science Student">
-<meta property="og:description" content="Building a model that reads Indian Sign Language from video. Open to software, data science and ML roles for 2027.">
+<meta property="og:title" content="Tarndeep Singh | AI, Machine Learning and Data Science">
+<meta property="og:description" content="Projects in machine learning, computer vision, molecular odor prediction, and retrieval-grounded AI applications.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%239b7be0'/%3E%3Ctext x='32' y='47' font-size='42' text-anchor='middle' font-family='Arial' font-weight='800' fill='%23ffc62b'%3ET%3C/text%3E%3C/svg%3E">
 <script>document.documentElement.classList.add('js')</script>
@@ -95,7 +95,6 @@ h1.name .line{display:block;white-space:nowrap;clip-path:inset(0 -50vw 0 -3vw);p
 .tracker canvas{width:100%;aspect-ratio:1/1.05;background:var(--mist);border-radius:14px}
 .tracker .readout{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:9px;font-family:var(--display);font-weight:700;font-size:.9rem}
 .tracker .meter-sm{display:block;height:6px;border-radius:99px;background:var(--lavl);margin-top:6px;overflow:hidden}
-.tracker .meter-sm i{display:block;height:100%;width:97%;background:var(--mint);border-radius:99px;transition:width .6s}
 .tracker .cap{display:block;font-size:.72rem;line-height:1.3;color:var(--ink2);margin-top:7px;font-family:var(--display);font-weight:500}
 
 /* ticker */
@@ -307,7 +306,27 @@ body.is-owner .toast{bottom:110px}
 .chart.two{height:200px;padding:18px 40px 8px}
 .chart.two div:nth-child(4) span{background:var(--lav)}
 .chart.two div:nth-child(2) span{background:var(--sun)}
-@media (max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+.case-study{margin-top:24px;border-top:1.5px dashed var(--lavd);padding-top:18px}
+.case-study summary{font-family:var(--display);font-weight:700;cursor:pointer;list-style:none;padding:8px 0}
+.case-study summary::-webkit-details-marker{display:none}
+.case-study summary::after{content:"+";float:right;font-size:1.25rem;line-height:1}
+.case-study[open] summary::after{content:"−"}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;margin-top:18px}
+.case-block{padding:18px;border:1.5px solid var(--ink);border-radius:18px;background:var(--mist)}
+.case-block h4{font-family:var(--display);font-size:1.05rem;margin-bottom:8px}
+.case-block p{font-size:1rem;line-height:1.5;color:var(--ink2)}
+.certifications{background:var(--lavl);border-block:2px solid var(--ink)}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:22px;margin-top:36px}
+.cert-card{display:flex;flex-direction:column;align-items:flex-start;padding:26px;min-height:290px}
+.cert-card h3{font-size:1.35rem;margin:8px 0 12px}
+.cert-card>p{font-size:1rem;line-height:1.45}
+.cert-issuer{font-family:var(--display);font-weight:700;color:var(--lavd)}
+.cert-meta{color:var(--ink2);margin-top:14px}
+.cert-link{font-family:var(--display);font-weight:700;color:var(--lavd);margin-top:auto;padding-top:20px;text-underline-offset:4px}
+.resume-section{background:var(--paper);border-block:2px solid var(--ink)}
+.resume-actions{display:flex;flex-wrap:wrap;gap:14px;margin:24px 0}
+.resume-frame{display:block;width:100%;height:min(82vh,1080px);min-height:650px;border:2px solid var(--ink);border-radius:20px;background:#fff}
+@media (max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}.resume-frame{height:72vh;min-height:520px}}
 
 /* responsive */
 @media (max-width:980px){
@@ -356,6 +375,8 @@ body.is-owner .toast{bottom:110px}
   <a href="#skills">Skills</a>
   <a href="#journey">Journey</a>
   <a href="#moments">Moments</a>
+  <a href="#certifications">Certs</a>
+  <a href="#resume">Resume</a>
   <a class="hot" href="#contact">Contact</a>
 </nav>
 
@@ -368,12 +389,13 @@ body.is-owner .toast{bottom:110px}
       <span class="line" aria-hidden="true">Singh</span>
     </h1>
     <p class="gur" lang="pa">ਤਰਨਦੀਪ ਸਿੰਘ</p>
-    <p class="lede">Final-year B.Tech student in Data Science at Akal University. Right now I'm building a real-time translator for Indian Sign Language, and I've shipped two live projects: an AI study companion and a sonar classifier. I'm looking for software engineering, data science or machine learning roles where I can work on real projects.</p>
+    <p class="lede">I'm a B.Tech Computer Science and Engineering student specialising in Data Science at Akal University, graduating in 2027. I build practical software and machine-learning applications across computer vision, molecular data, and AI-assisted learning.</p>
     <div class="cta">
       <a class="btn primary" href="#projects">See projects</a>
+      <a class="btn" href="#resume">View resume</a>
       <a class="btn" href="Tarndeep_Singh_Resume.pdf" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>
-        Download résumé
+        Download resume
       </a>
     </div>
   </div>
@@ -397,9 +419,9 @@ body.is-owner .toast{bottom:110px}
     <div>
       <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
       <h2>About me</h2>
-      <p>I'm a final-year B.Tech CSE (Data Science) student at Akal University in Talwandi Sabo, Punjab, with a 9.02 CGPA. I like projects where messy input has to become something a person can use: video turned into landmark sequences, study logs turned into a weekly dashboard.</p>
-      <p>I work in Python, Java and SQL, and I keep my fundamentals sharp with data structures and algorithms. I care about the unglamorous parts of machine learning too, like dataset analysis, preprocessing, class balance and honest evaluation. I'm aiming for software engineer, data science, machine learning and graduate engineer roles starting in 2027.</p>
-      <p>Away from the notebook, I founded DataNinjas, a data science club on campus, and I enjoy designing puzzle-style events, from cipher rounds to a treasure hunt with 99 players.</p>
+      <p>I'm a B.Tech Computer Science and Engineering student specialising in Data Science at Akal University in Talwandi Sabo, Punjab. I expect to graduate in 2027 and currently hold a 9.02/10 CGPA.</p>
+      <p>My projects combine machine learning and practical application development: landmark sequences for gesture recognition, molecular features for odor-descriptor prediction, and retrieval-grounded explanations for study notes. I work with Python, Java, SQL, JavaScript, model evaluation, APIs, and data processing.</p>
+      <p>Outside project work, I helped build the DataNinjas technical community and have led student learning sessions and campus event teams.</p>
     </div>
     <aside class="card edu reveal" aria-label="Education">
       <h3>Education</h3>
@@ -429,7 +451,7 @@ body.is-owner .toast{bottom:110px}
   <div class="wrap">
     <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
     <h2>Projects</h2>
-    <p class="sec-lede">Three end-to-end builds, two of them live, plus a study tracker. Every number below comes from the project reports.</p>
+    <p class="sec-lede">Featured work in computer vision, molecular machine learning, and retrieval-grounded AI, with earlier projects below. Project status and test limits are stated alongside the work.</p>
 
     <article class="card proj reveal">
       <div class="proj-head">
@@ -438,24 +460,23 @@ body.is-owner .toast{bottom:110px}
       </div>
       <div class="split split-isl"><div><p>A real-time translator that reads isolated Indian Sign Language words from an ordinary webcam and shows them as English captions in the browser. Built on the AI4Bharat INCLUDE-50 benchmark.</p>
       <ul class="pts">
-        <li>Turns each frame into a 170-value, position- and scale-invariant landmark vector with MediaPipe, so the same sign looks the same whether the signer sits near or far.</li>
-        <li>A Conv1D + BiLSTM + multi-head attention network (about 0.88 M parameters) classifies a 32-frame sequence, served through FastAPI, WebSockets and ONNX Runtime.</li>
-        <li>Adds an explicit idle class and a motion-based sign spotter, because a 262-class prototype that scored about 80% top-1 offline broke down on a live camera.</li>
+        <li>The current project version uses 943 AI4Bharat INCLUDE-50 videos across 50 sign classes and one idle class.</li>
+        <li>MediaPipe Pose and Hand Landmarkers turn video into structured numerical sequences that retain information across time.</li>
+        <li>The Conv1D-BiLSTM-Multi-Head Self-Attention model has approximately 0.88 million parameters and is paired with FastAPI, WebSockets and ONNX Runtime inference components.</li>
       </ul></div><button class="tracker" id="tracker" type="button" aria-label="Illustration of hand landmark tracking. Press to show another hand sign.">
       <canvas id="hand" aria-hidden="true"></canvas>
-      <span class="readout"><span id="cls">open_palm</span><span id="conf">97%</span></span>
-      <span class="meter-sm"><i id="confbar"></i></span>
-      <span class="cap">Hand landmarks, illustrated. Tap to change the sign.</span>
+      <span class="readout"><span id="cls">open_palm</span><span>Illustration</span></span>
+      <span class="cap">Illustrative hand-landmark animation only; it does not show model output or confidence.</span>
     </button></div>
-      <ol class="pipeline" aria-label="Pipeline stages">
-        <li style="--i:0"><b>Webcam</b>Runs in the browser on a laptop or phone</li>
-        <li style="--i:1"><b>MediaPipe landmarks</b>Pose and both hands, per frame</li>
-        <li style="--i:2"><b>170 features</b>Scale and position invariant, hand-present flags</li>
-        <li style="--i:3"><b>Sign spotter</b>Wrist motion cuts each sign, resampled to 32 frames</li>
-        <li style="--i:4"><b>Conv1D-BiLSTM-attention</b>ONNX inference, 51 classes with idle rejection</li>
+      <ol class="pipeline" aria-label="Recognition pipeline">
+        <li style="--i:0"><b>Video clips</b>943 INCLUDE-50 videos across 50 signs plus idle</li>
+        <li style="--i:1"><b>MediaPipe</b>Pose and hand landmarks extracted from visual input</li>
+        <li style="--i:2"><b>Numerical sequences</b>Landmark values arranged over time</li>
+        <li style="--i:3"><b>Sequence model</b>Conv1D, Bi-LSTM and multi-head self-attention</li>
+        <li style="--i:4"><b>Inference components</b>FastAPI, WebSockets and ONNX Runtime</li>
       </ol>
       <ul class="stats"><li><b><span data-count data-to="51">51</span></b><span>classes: 50 signs + idle</span></li><li><b><span data-count data-to="943">943</span></b><span>INCLUDE-50 videos used</span></li><li><b><span data-count data-to="0.88" data-dec="2">0.88</span>M</b><span>model parameters</span></li><li><b><span data-count data-to="12">12</span>/12</b><span>automated tests passing</span></li></ul>
-      <p class="honest">Accuracy on unseen signers is still being measured, so no headline score is claimed here.</p>
+      <p class="honest">The project is ongoing. The portfolio reports the current model size and test count, without claiming recognition accuracy.</p>
       <div class="proj-foot">
         <ul class="chips"><li>Python</li><li>PyTorch</li><li>MediaPipe</li><li>OpenCV</li><li>FastAPI</li><li>WebSockets</li><li>ONNX Runtime</li></ul>
         <div class="proj-links" data-proj="isl"></div>
@@ -464,35 +485,64 @@ body.is-owner .toast{bottom:110px}
 
 
     <article class="card proj reveal">
-      <div class="split">
-        <div>
-          <div class="proj-head">
-            <h3>StudySphere</h3>
-            <span class="badge" style="background:var(--mintl)">Live, Dec 2025</span>
-          </div>
-          <p>A personalised study companion for school and college students. It tracks subjects, topics, notes, deadlines, attendance, focus sessions and habits in one place, and its AI tutor answers only from the student's own notes.</p>
-          <ul class="pts">
-            <li>The tutor splits notes into passages, keeps only those matching at least half of the question's meaningful terms, and cites up to 3 of them. With no evidence it says so instead of guessing.</li>
-            <li>Local-first by design: it runs fully in the browser, and cloud sync with Supabase and PostgreSQL Row Level Security is optional. AI keys stay on Vercel serverless functions.</li>
-            <li>Asks for school or college and age first, then suggests from 5 themes, each built from CSS variables, with 44 px touch targets and a reduced-motion mode.</li>
-          </ul>
-        </div>
-        <div class="flow" role="img" aria-label="How the tutor answers: question, passage matching, cited answer or no-evidence reply">
-          <h4>How the tutor answers</h4>
-          <ol>
-            <li><b>Ask</b>Typed or spoken question</li>
-            <li><b>Match</b>Passages from your notes scored by shared terms</li>
-            <li><b>Filter</b>Keep passages with at least 50% of the terms</li>
-            <li><b>Answer</b>Up to 3 cited passages, or "not enough evidence"</li>
-          </ol>
-        </div>
+      <div class="proj-head">
+        <h3>AromaScope: Molecular Odor Prediction</h3>
+        <span class="badge" style="background:var(--mintl)">2026 · Demo</span>
       </div>
-      <ul class="stats"><li><b><span data-count data-to="5">5</span></b><span>age-aware themes</span></li><li><b><span data-count data-to="3">3</span></b><span>AI providers with fallback</span></li><li><b><span data-count data-to="15">15</span> MB</b><span>PDFs read in the browser</span></li><li><b><span data-count data-to="20">20</span></b><span>test cases in the plan</span></li></ul>
+      <p>A machine-learning application that turns a molecule written as SMILES into a ranked set of odor descriptors. It is a structure-based screening aid, not an electronic nose or a measurement of how every person will perceive a smell.</p>
+      <ul class="pts">
+        <li>Uses RDKit to standardise supported single-molecule structures and build 2,048-bit Morgan fingerprints plus eight physicochemical features.</li>
+        <li>Predicts multiple descriptors across 113 classes with a multi-label model; the shipped baseline is logistic regression.</li>
+        <li>Uses scaffold-grouped evaluation and applicability-domain checks. It can abstain when a molecule is outside the model's supported similarity range.</li>
+      </ul>
+      <ul class="stats"><li><b>113</b><span>odor descriptor classes</span></li><li><b>2,048</b><span>Morgan fingerprint bits</span></li><li><b>8</b><span>physicochemical features</span></li><li><b>3,522</b><span>source records before cleaning</span></li></ul>
+      <p class="honest">The SRS records the deployment, chemistry and API checks as still in progress; model evaluation numbers have not yet been reviewed. No performance score is claimed here.</p>
+      <details class="case-study">
+        <summary>Technical case study: input, model, evaluation and limits</summary>
+        <div class="case-grid">
+          <article class="case-block"><h4>Problem and input</h4><p>Odor screening can help students and fragrance or flavor researchers narrow down candidates before sensory testing. AromaScope accepts one structure as a SMILES string, a compact text notation for atoms and bonds. It does not identify odors from air, convert names to structures, or model mixtures.</p></article>
+          <article class="case-block"><h4>Molecular representation</h4><p>RDKit parses and standardises an input under a shared chemistry policy. The application rejects unsupported structures and multi-component inputs. Each accepted molecule is represented by a 2,048-bit Morgan fingerprint and eight physicochemical measurements.</p></article>
+          <article class="case-block"><h4>Model and evaluation</h4><p>Because a molecule can have several odor labels, the task is multi-label classification over 113 descriptors. Logistic regression is the shipped model; a random forest is used as a benchmark. Scaffold-based splits keep molecules with related ring frameworks together, reducing the risk that near-duplicates inflate test results. Per-descriptor calibration is kept only when it improves held-out results.</p></article>
+          <article class="case-block"><h4>Prediction workflow</h4><p>The FastAPI service loads a versioned release bundle and checks its file checksums. For an input it computes features, ranks descriptors, finds structurally similar reference molecules, and reports applicability. If the input is too far from the training domain, the system abstains. The browser app also includes Compare, Odor Map, and Model &amp; Data views.</p></article>
+          <article class="case-block"><h4>Limits and next steps</h4><p>The source dataset records positive labels only; an unlisted descriptor is unknown, not confirmed absent. Stereochemistry, mixtures, concentration, temperature, purity, toxicity and safety decisions are outside scope. The app does not provide validated individual confidence intervals. Possible next steps include a name-to-structure helper, stereochemistry-aware features, additional datasets, and a graph-neural-network benchmark.</p></article>
+        </div>
+      </details>
       <div class="proj-foot">
-        <ul class="chips"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Node.js</li><li>Supabase</li><li>PostgreSQL</li><li>Vercel Functions</li><li>PDF.js</li></ul>
-        <div class="proj-links" data-proj="studysphere"></div>
+        <ul class="chips"><li>Python</li><li>RDKit</li><li>Scikit-learn</li><li>FastAPI</li><li>Docker</li></ul>
+        <div class="proj-links" data-proj="aromascope"></div>
       </div>
     </article>
+
+    <article class="card proj reveal">
+      <div class="proj-head">
+        <h3>LifeOS 3.0: Productivity and Learning Workspace</h3>
+        <span class="badge" style="background:var(--mintl)">2026 · Developed</span>
+      </div>
+      <p>An integrated workspace for daily planning, academic organisation, personal routines and note-based learning. LifeOS brings together task, study and productivity features previously presented as separate projects.</p>
+      <ul class="pts">
+        <li>Combines daily goals and tasks, habits, focus sessions, exercise tracking, academic plans, syllabus topics, notes, quizzes and deadlines.</li>
+        <li>Retrieves relevant passages from a user's notes to support optional AI explanations. It does not train a model from scratch.</li>
+        <li>Includes PDF note import, optional sign-in and cross-device sync, private file storage, reminders and an installable offline shell.</li>
+      </ul>
+      <ul class="stats"><li><b>70</b><span>automated tests passing</span></li><li><b>10 MB</b><span>PDF size limit</span></li><li><b>300</b><span>pages processed at most</span></li><li><b>Page refs</b><span>kept with retrieved passages</span></li></ul>
+      <p class="honest">The 70 tests use simulated services. Real Supabase auth and sync, Google sign-in, AI-provider requests, browser PDF handling, reminders and full browser behaviour have not yet been verified in real environments.</p>
+      <details class="case-study">
+        <summary>Technical case study: product design, data flow and verification</summary>
+        <div class="case-grid">
+          <article class="case-block"><h4>Goals and users</h4><p>LifeOS is designed for students and individuals who want academic planning and daily routines in one workspace. It combines personal task organisation, habit tracking, focus sessions, workouts, subject planning, syllabus tracking, study notes, quizzes, deadlines and progress monitoring.</p></article>
+          <article class="case-block"><h4>PDF notes and retrieval-grounded AI</h4><p>Users can import PDFs with selectable text up to 10 MB and 300 pages. Extracted text retains page numbers so retrieved passages can point back to the source. Scanned PDFs are rejected with a clear message. When a signed-in user enables Explain with AI and a provider is configured, the app sends only selected matching passages. Answers without source-note citations are hidden, and daily limits help control provider costs.</p></article>
+          <article class="case-block"><h4>Authentication and synchronisation</h4><p>Google sign-in and email-link authentication are supported. Tasks, habits, workouts, notes and study data sync item by item. If the same item changes on two devices, the newer edit takes precedence and the other copy is saved for recovery or download. First-time device linking shows a summary and downloads a backup before sync; signing out keeps local device data.</p></article>
+          <article class="case-block"><h4>Storage, reminders and offline use</h4><p>Original files can be retained in Supabase private storage when a note is saved; Google Drive is not used. A configurable daily morning summary can include due deadlines and topics to review, respects quiet hours, and includes personal tasks only by opt-in. A scheduled GitHub Action triggers the hourly reminder process because the Vercel free plan lacks that schedule. The installable app uses a service-worker-based shell, and local data remains available while signed out. Account deletion removes credentials, synced data and cloud files while retaining local device data.</p></article>
+          <article class="case-block"><h4>Technology and verification</h4><p>The resume lists JavaScript, Supabase, PostgreSQL, Vercel, PDF.js and GitHub Actions. The automated suite currently reports 70 passing tests, but these run against simulated services. Real authentication, synchronisation, AI-provider requests, browser PDF files, reminder delivery and full browser flows still need real-environment checks.</p></article>
+        </div>
+      </details>
+      <div class="proj-foot">
+        <ul class="chips"><li>JavaScript</li><li>Supabase</li><li>PostgreSQL</li><li>Vercel</li><li>PDF.js</li><li>GitHub Actions</li></ul>
+        <div class="proj-links" data-proj="lifeos"></div>
+      </div>
+    </article>
+
+    <h3 class="shelf-title">Additional projects</h3>
 
     <article class="card proj reveal">
       <div class="split">
@@ -566,17 +616,16 @@ body.is-owner .toast{bottom:110px}
     <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
     <h2>Skills and toolbox</h2>
     <div class="bento">
-      <article class="bx bx-ml reveal"><h3>Machine learning</h3>
-        <ul class="chips"><li>Computer Vision</li><li>Feature Extraction</li><li>Data Preprocessing</li><li>Model Evaluation</li><li>Scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>Classification</li></ul></article>
+      <article class="bx bx-ml reveal"><h3>Machine learning and AI</h3>
+        <ul class="chips"><li>Supervised Learning</li><li>Classification</li><li>Multi-label Learning</li><li>Feature Engineering</li><li>Preprocessing</li><li>Data Augmentation</li><li>Cross-Validation</li><li>Hyperparameter Tuning</li><li>Model Evaluation</li><li>Neural Networks</li><li>Bi-LSTM</li><li>Attention</li><li>Sequence Modelling</li><li>Computer Vision</li><li>Retrieval-Augmented Applications</li></ul></article>
       <article class="bx bx-ds reveal"><h3>Data science</h3>
-        <ul class="chips"><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Seaborn</li><li>Data Analysis</li><li>Data Visualization</li></ul></article>
-      <article class="bx bx-lang reveal"><h3>Languages</h3>
+        <ul class="chips"><li>Pandas</li><li>NumPy</li><li>Data Processing</li><li>Feature Extraction</li></ul></article>
+      <article class="bx bx-lang reveal"><h3>Programming</h3>
         <ul class="chips"><li>Python</li><li>Java</li><li>SQL</li><li>JavaScript</li></ul></article>
-      <article class="bx bx-tools reveal"><h3>Databases and tools</h3>
-        <ul class="chips"><li>SQL</li><li>Git</li><li>GitHub</li><li>VS Code</li><li>PyCharm</li><li>Jupyter Notebook</li><li>Google Colab</li><li>Streamlit</li><li>FastAPI</li><li>Supabase</li><li>Vercel</li></ul></article>
-      <article class="bx bx-cs reveal"><h3>Core computer science</h3>
-        <ul class="chips"><li>Data Structures and Algorithms</li><li>OOP</li><li>Problem Solving</li><li>DBMS</li></ul></article>
-    </div>
+      <article class="bx bx-tools reveal"><h3>Libraries and frameworks</h3>
+        <ul class="chips"><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>OpenCV</li><li>MediaPipe</li><li>RDKit</li></ul></article>
+      <article class="bx bx-cs reveal"><h3>Deployment and tools</h3>
+        <ul class="chips"><li>FastAPI</li><li>ONNX Runtime</li><li>Streamlit</li><li>Git</li><li>GitHub</li><li>Docker</li><li>Supabase</li></ul></article>
 
     <div class="course" aria-label="Relevant coursework">
       <h3>Coursework</h3>
@@ -603,7 +652,20 @@ body.is-owner .toast{bottom:110px}
             <li>Helped establish and build a data science focused technical club into a community of 75 members, coordinating technical activities and student engagement.</li>
             <li>Planned and organized a Quiz Competition (48 participants), a Debate Competition (25) and a Treasure Hunt (90 participants across 30 teams).</li>
             <li>Designed and coordinated the Treasure Hunt around logical reasoning, problem-solving, decoding and cipher-based challenges, including Caesar and Playfair ciphers.</li>
-            <li>Coordinated teams, volunteers, participants and event logistics, and promoted peer learning and collaboration among students.</li>
+            <li>Guided a team of 10 event volunteers, assigned responsibilities, monitored execution and promoted peer learning and collaboration.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="tl-item reveal">
+        <time>Feb to May 2025</time>
+        <div>
+          <h3>Student Learning Team Lead</h3>
+          <p class="org">Akal University</p>
+          <ul>
+            <li>Led a group of 30 students through structured daily English-learning sessions of about 30 minutes.</li>
+            <li>Monitored participation and task completion, then followed up with students who missed an activity.</li>
+            <li>Encouraged steady participation through individual motivation, clear expectations and reminders.</li>
+            <li>Helped maintain continuity and accountability across the group; this was a student coordination role.</li>
           </ul>
         </div>
       </article>
@@ -668,7 +730,7 @@ body.is-owner .toast{bottom:110px}
 <section id="wins">
   <div class="wrap">
     <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
-    <h2>Achievements and certifications</h2>
+    <h2>Achievements</h2>
     <div class="wins">
       <article class="win reveal">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 42V8"/><path d="M12 10h24l-5 8 5 8H12"/></svg>
@@ -684,6 +746,7 @@ body.is-owner .toast{bottom:110px}
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 8h20v10a10 10 0 01-20 0z"/><path d="M14 12H6v4a8 8 0 008 8M34 12h8v4a8 8 0 01-8 8M24 28v8M16 40h16"/></svg>
         <h3>Cybersecurity Quiz, 2025</h3>
         <p>Secured <b>1st position</b> among 10 participating teams.</p>
+        <a class="cert-link" href="assets/achievements/hackmania.jpg" target="_blank" rel="noopener">View certificate</a>
       </article>
       <article class="win reveal">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 14L8 24l10 10M30 14l10 10-10 10M27 10l-6 28"/></svg>
@@ -691,11 +754,65 @@ body.is-owner .toast{bottom:110px}
         <p>Qualified through <b>two rounds</b> of an individual hackathon run by the CodeForge Club.</p>
       </article>
       <article class="win reveal">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M16 24l6 6 11-12"/></svg>
-        <h3>Commonwealth Bank, Introduction to Software Engineering</h3>
-        <p>Completed the job simulation certification.</p>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32v24H8z"/><path d="M16 40h16M24 34v6"/></svg>
+        <h3>Logos &amp; Tagline Competition</h3>
+        <p>Placed <b>3rd</b> in a campus logo and tagline competition.</p>
+        <a class="cert-link" href="assets/achievements/logos_tagline_competition.jpg" target="_blank" rel="noopener">View certificate</a>
       </article>
     </div>
+  </div>
+</section>
+
+<section id="certifications" class="certifications">
+  <div class="wrap">
+    <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
+    <h2>Certifications</h2>
+    <p class="sec-lede">Technical training and a software-engineering job simulation, with the issuing organisations and assessment results shown as awarded.</p>
+    <div class="cert-grid">
+      <article class="card cert-card reveal">
+        <p class="cert-issuer">FutureSkills Prime / NASSCOM</p>
+        <h3>Certificate Program in Testing Tools</h3>
+        <p>Selenium with Java and Python, plus API Testing.</p>
+        <p class="cert-meta">Gold achievement · Assessment score 95% · Issued 10 April 2026</p>
+        <a class="cert-link" href="assets/certificates/FutureSkills_Prime_NASSCOM_Testing_Tools.pdf" target="_blank" rel="noopener">View certificate</a>
+      </article>
+      <article class="card cert-card reveal">
+        <p class="cert-issuer">Commonwealth Bank · Forage</p>
+        <h3>Introduction to Software Engineering</h3>
+        <p>Completed a job simulation covering website creation and styling, financial cybersecurity, and a web-hosting proposal.</p>
+        <p class="cert-meta">Job simulation · Completed 26 July 2026</p>
+        <a class="cert-link" href="assets/certificates/Commonwealth_Bank_Forage_Software_Engineering_Simulation.pdf" target="_blank" rel="noopener">View certificate</a>
+      </article>
+      <article class="card cert-card reveal">
+        <p class="cert-issuer">Spoken Tutorial · IIT Bombay</p>
+        <h3>C Programming</h3>
+        <p>Completed the C training assessment.</p>
+        <p class="cert-meta">Score 90% · September 2024</p>
+        <a class="cert-link" href="assets/certificates/IIT_Bombay_C_Training.pdf" target="_blank" rel="noopener">View certificate</a>
+      </article>
+      <article class="card cert-card reveal">
+        <p class="cert-issuer">Spoken Tutorial · IIT Bombay</p>
+        <h3>C++ Programming</h3>
+        <p>Completed the Cpp training assessment.</p>
+        <p class="cert-meta">Score 75% · September 2024</p>
+        <a class="cert-link" href="assets/certificates/IIT_Bombay_CPP_Training.pdf" target="_blank" rel="noopener">View certificate</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="resume-section" id="resume">
+  <div class="wrap">
+    <svg class="motif" viewBox="0 0 64 28" aria-hidden="true"><line x1="8" y1="20" x2="30" y2="8"/><line x1="30" y1="8" x2="56" y2="18"/><circle cx="8" cy="20" r="6"/><circle cx="30" cy="8" r="6"/><circle cx="56" cy="18" r="6"/></svg>
+    <h2>Resume</h2>
+    <p class="sec-lede">The embedded preview and download use the same one-page AI and machine-learning resume.</p>
+    <div class="resume-actions">
+      <a class="btn primary" href="Tarndeep_Singh_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn" href="Tarndeep_Singh_Resume.pdf" download>Download resume</a>
+    </div>
+    <iframe class="resume-frame" src="Tarndeep_Singh_Resume.pdf#view=FitH" title="Tarndeep Singh resume preview" loading="lazy">
+      <p>Your browser cannot display the PDF preview. <a href="Tarndeep_Singh_Resume.pdf">Open the resume</a> or use Download resume.</p>
+    </iframe>
   </div>
 </section>
 
@@ -716,7 +833,8 @@ body.is-owner .toast{bottom:110px}
     <div class="links">
       <a class="btn" href="https://www.linkedin.com/in/tarndeep-singh-09b8bb296/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://github.com/TarndeepSingh" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="Tarndeep_Singh_Resume.pdf" download>Résumé (PDF)</a>
+      <a class="btn" href="#resume">View resume</a>
+      <a class="btn" href="Tarndeep_Singh_Resume.pdf" download>Download resume</a>
     </div>
   </div>
 </section>
@@ -868,11 +986,10 @@ body.is-owner .toast{bottom:110px}
     });
   }
 
-  const clsEl = document.getElementById('cls'), confEl = document.getElementById('conf'), confBar = document.getElementById('confbar');
+  const clsEl = document.getElementById('cls');
   function setPose(i) {
     pi = i % POSES.length; tgt = vec(POSES[pi]);
-    const c = 93 + Math.floor(Math.random() * 6);
-    clsEl.textContent = POSES[pi].n; confEl.textContent = c + '%'; confBar.style.width = c + '%';
+    clsEl.textContent = POSES[pi].n;
     if (reduce) cur = tgt.slice();
     nextAt = performance.now() + 2600;
     if (reduce) draw(0);
@@ -898,10 +1015,14 @@ body.is-owner .toast{bottom:110px}
   'use strict';
   /* Soft lock only: it hides the editing tools from visitors. Change this passcode. */
   const OWNER_PASSCODE = 'tarndeep@edit26';
-  const DEFAULTS = {"projects": {"isl": {"github": "https://github.com/TarndeepSingh/ISL_Prototype", "demo": ""}, "sonar": {"github": "https://github.com/TarndeepSingh/sonar-rock-vs-mine", "demo": "https://sonar-rock-vs-mine-by-tarn.streamlit.app/"}, "studysphere": {"github": "https://github.com/TarndeepSingh/studysphere", "demo": "https://studysphere-by-tarn.vercel.app"}, "focuslab": {"github": "https://github.com/TarndeepSingh/focuslab", "demo": "https://focuslab.streamlit.app/"}}, "repos": [{"name": "pomodoro-timer", "desc": "Pomodoro timer in Python and Tkinter with work and break cycles, safe timer handling and an object-oriented design.", "github": "https://github.com/TarndeepSingh/pomodoro-timer", "demo": "", "lang": "Python"}, {"name": "OOP-coffee-machine", "desc": "A coffee machine simulation showing class-based design, resource management and payment processing.", "github": "https://github.com/TarndeepSingh/OOP-coffee-machine", "demo": "", "lang": "Python"}, {"name": "blackjack-game", "desc": "Command-line Blackjack with clean game logic, score handling and replay.", "github": "https://github.com/TarndeepSingh/blackjack-game", "demo": "", "lang": "Python"}, {"name": "snake-game", "desc": "A Snake game project built in Python.", "github": "https://github.com/TarndeepSingh/snake-game", "demo": "", "lang": "Python"}, {"name": "higher-lower-game", "desc": "Guess which account has more followers. Tracks your score across rounds.", "github": "https://github.com/TarndeepSingh/higher-lower-game", "demo": "", "lang": "Python"}, {"name": "python-turtle-visualizations", "desc": "Spirographs, random walks and polygon drawings made while learning core Python.", "github": "https://github.com/TarndeepSingh/python-turtle-visualizations", "demo": "", "lang": "Python"}, {"name": "password-manager", "desc": "A password manager project written in Python.", "github": "https://github.com/TarndeepSingh/password-manager", "demo": "", "lang": "Python"}], "gallery": []};
+  const DEFAULTS = {"projects":{"isl":{"github":"https://github.com/TarndeepSingh/isl-engine","demo":""},"sonar":{"github":"https://github.com/TarndeepSingh/sonar-rock-vs-mine","demo":"https://sonar-rock-vs-mine-by-tarn.streamlit.app/"},"focuslab":{"github":"https://github.com/TarndeepSingh/focuslab","demo":"https://focuslab.streamlit.app/"},"aromascope":{"github":"https://github.com/TarndeepSingh/aromascope","demo":"https://aromascope.onrender.com/"},"lifeos":{"github":"https://github.com/TarndeepSingh/life-os","demo":"https://life-os-by-tarn.vercel.app/"}},"repos":[{"name":"pomodoro-timer","desc":"Pomodoro timer in Python and Tkinter with work and break cycles, safe timer handling and an object-oriented design.","github":"https://github.com/TarndeepSingh/pomodoro-timer","demo":"","lang":"Python"},{"name":"OOP-coffee-machine","desc":"A coffee machine simulation showing class-based design, resource management and payment processing.","github":"https://github.com/TarndeepSingh/OOP-coffee-machine","demo":"","lang":"Python"},{"name":"blackjack-game","desc":"Command-line Blackjack with clean game logic, score handling and replay.","github":"https://github.com/TarndeepSingh/blackjack-game","demo":"","lang":"Python"},{"name":"snake-game","desc":"A Snake game project built in Python.","github":"https://github.com/TarndeepSingh/snake-game","demo":"","lang":"Python"},{"name":"higher-lower-game","desc":"Guess which account has more followers. Tracks your score across rounds.","github":"https://github.com/TarndeepSingh/higher-lower-game","demo":"","lang":"Python"},{"name":"python-turtle-visualizations","desc":"Spirographs, random walks and polygon drawings made while learning core Python.","github":"https://github.com/TarndeepSingh/python-turtle-visualizations","demo":"","lang":"Python"},{"name":"password-manager","desc":"A password manager project written in Python.","github":"https://github.com/TarndeepSingh/password-manager","demo":"","lang":"Python"}],"gallery":[]};
   const clone = o => JSON.parse(JSON.stringify(o));
   let data = clone(window.SITE_DATA || DEFAULTS);
   data.projects = Object.assign(clone(DEFAULTS.projects), data.projects || {});
+  delete data.projects.studysphere;
+  data.projects.isl.github = 'https://github.com/TarndeepSingh/isl-engine';
+  data.projects.aromascope = clone(DEFAULTS.projects.aromascope);
+  data.projects.lifeos = clone(DEFAULTS.projects.lifeos);
   data.repos = data.repos || [];
   data.gallery = data.gallery || [];
   let owner = false, dirty = false, filter = 'all', bar = null;
